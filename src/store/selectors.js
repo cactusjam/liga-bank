@@ -1,3 +1,3 @@
 export const getActiveSlideIndex = (state) => {
-  return state.isActiveSlideIndex;
+  return state.activeSlideIndex;
 };

@@ -2,17 +2,19 @@ export const MENU_ITEMS = ['Услуги', 'Рассчитать кредит', 
 
 export const SliderItems = {
   FIRST_SLIDE: {
-    TITLE: 'Кредиты на любой случай',
-    TITLE_BTN: 'Рассчитать кредит'
+    title: 'Кредиты на любой случай',
+    titleBtn: 'Рассчитать кредит'
   },
 
   SECOND_SLIDE: {
-    TITLE: 'Ваша уверенность в завтрашнем дне',
-    TITLE_BTN: ''
+    title: 'Ваша уверенность в завтрашнем дне',
+    titleBtn: ''
   },
 
   THIRD_SLIDE: {
-    TITLE: 'Всегда рядом',
-    TITLE_BTN: 'Найти отделение'
+    title: 'Всегда рядом',
+    titleBtn: 'Найти отделение'
   }
 }
+
+export const DELAY = 4000;

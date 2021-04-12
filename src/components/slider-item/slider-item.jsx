@@ -4,26 +4,34 @@ import PropTypes from 'prop-types';
 import { setActiveSlideIndex } from '../../store/actions';
 import { getActiveSlideIndex} from '../../store/selectors';
 
-const SliderItem = ({ isActiveSlideIndex, setActiveSlideIndex, title, titleBtn }) => {
+const SliderItem = ({ activeSlideIndex, setActiveSlideIndex, slideData, slideIndex }) => {
+  const isActive = slideIndex === activeSlideIndex;
+
+  const { title, titleBtn } = slideData;
+  const isBtnShowing = titleBtn !== '';
 
   return (
-    <li className={isActiveSlideIndex? 'slider__item' : 'visually-hidden'}>
+    <li className={isActive? 'slider__item' : 'visually-hidden'}>
       <h1>Лига Банк</h1>
       <p>{title}</p>
-      <button className='slider__button' type='button' aria-label={titleBtn}>{titleBtn}</button>
+      {isBtnShowing && (
+        <button className='slider__button' type='button' aria-label={titleBtn}>{titleBtn}</button>
+      )}
     </li>
   )
 };
 
 SliderItem.propTypes = {
-  isActiveSlideIndex: PropTypes.bool,
+  activeSlideIndex: PropTypes.number,
+  slideIndex: PropTypes.number,
   setActiveSlideIndex: PropTypes.func,
-  title: PropTypes.string,
-  titleBtn: PropTypes.string
+  slideData: PropTypes.object,
+  // title: PropTypes.string,
+  // titleBtn: PropTypes.string
 };
 
 const mapStateToProps = (state) => ({
-  isActiveSlideIndex: getActiveSlideIndex(state)
+  activeSlideIndex: getActiveSlideIndex(state)
 });
 
 const mapDispatchToProps = {

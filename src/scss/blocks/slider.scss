@@ -26,6 +26,7 @@
   min-height: 400px;
   flex-shrink: 0;
   padding-left: 268px;
+  white-space: nowrap;
 
   h1 {
     margin-top: 110px;
@@ -60,14 +61,18 @@
   bottom: 40px;
   left: 0;
   right: 0;
+}
 
-  button {
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0 5px;
-    width: 8px;
-    height: 8px;
+.slider__nav-btn {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #CDCDCD;
+
+  &--active {
     background-color: #B1B1B1;
   }
 }
