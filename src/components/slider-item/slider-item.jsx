@@ -15,7 +15,7 @@ const SliderItem = ({ activeSlideIndex, setActiveSlideIndex, slideData, slideInd
       <h1>Лига Банк</h1>
       <p>{title}</p>
       {isBtnShowing && (
-        <button className='slider__button' type='button' aria-label={titleBtn}>{titleBtn}</button>
+        <a href='/' className='slider__button' type='button' aria-label={titleBtn}>{titleBtn}</a>
       )}
     </li>
   )

@@ -41,18 +41,21 @@
     margin: 0;
     line-height: 26px;
   }
+}
 
-  button {
-    width: 250px;
-    padding: 18px;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: $roboto;
-    border: none;
-    background-color: $btn-color;
-  }
+.slider__button {
+  display: block;
+  width: 250px;
+  padding: 18px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: $roboto;
+  border: none;
+  background-color: $btn-color;
+  color: $main-text;
 }
 
 .slider__nav {
