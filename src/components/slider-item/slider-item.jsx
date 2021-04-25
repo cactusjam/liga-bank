@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { setActiveSlideIndex } from '../../store/actions';
 import { getActiveSlideIndex} from '../../store/selectors';
 
-const SliderItem = ({ activeSlideIndex, setActiveSlideIndex, slideData, slideIndex }) => {
+const SliderItem = ({ activeSlideIndex, slideData, slideIndex }) => {
   const isActive = slideIndex === activeSlideIndex;
 
   const { title, titleBtn } = slideData;
@@ -24,10 +24,7 @@ const SliderItem = ({ activeSlideIndex, setActiveSlideIndex, slideData, slideInd
 SliderItem.propTypes = {
   activeSlideIndex: PropTypes.number,
   slideIndex: PropTypes.number,
-  setActiveSlideIndex: PropTypes.func,
   slideData: PropTypes.object,
-  // title: PropTypes.string,
-  // titleBtn: PropTypes.string
 };
 
 const mapStateToProps = (state) => ({

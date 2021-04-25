@@ -26,6 +26,7 @@ const Slider = ({ activeSlideIndex, setActiveSlideIndex }) => {
     return () => {
       resetTimeout();
     };
+     // eslint-disable-next-line
   }, [activeSlideIndex]);
 
   const resetTimeout = () => {

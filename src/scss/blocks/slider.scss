@@ -1,7 +1,6 @@
 .slider {
   position: relative;
   height: 100%;
-  background-color: #E0E0E0;
   overflow-x: hidden;
 }
 
@@ -17,6 +16,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: #F5F4F4;
 }
 
 .slider__item {
