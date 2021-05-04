@@ -1,0 +1,32 @@
+.map {
+  padding-bottom: 110px;
+}
+.map__wrapper {
+  display: flex;
+  background-color: #F5F4F4;
+  min-height: 82px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.map__wrapper-list {
+  list-style: none;
+  margin: 0;
+  margin-top: 26px;
+  padding: 0;
+  width: 50%;
+  text-align: center;
+
+  &:first-child {
+    border-right: 1px solid #C4C4C4;
+  }
+}
+
+.map__input {
+  &:checked {
+    background-color: #0A1E32;
+  }
+}
+
+.map__google {
+  min-height: 462px;
+}

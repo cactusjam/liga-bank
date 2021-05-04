@@ -1,4 +1,4 @@
-export const MENU_ITEMS = ['Услуги', 'Рассчитать кредит', 'Конвертер валют', 'Контакты', 'Задать вопрос'];
+export const MENU_ITEMS = ['Услуги', 'Рассчитать кредит', 'Контакты', 'Задать вопрос'];
 export const SERVICES_ITEMS = ['Вклады', 'Кредиты', 'Страхование', 'Онлайн-сервисы'];
 
 export const SliderItems = {
@@ -84,3 +84,31 @@ export const Tabs = {
 };
 
 export const DELAY = 4000;
+
+export const marks = [
+  {
+    lat: 55.5815244,
+    lng: 36.8251021
+  },
+  {
+    lat: 53.8639258,
+    lng: 46.5918905
+  },
+  {
+    lat: 57.1428274,
+    lng: 65.266777
+  },
+  {
+    lat: 54.985948,
+    lng: 73.0759563
+  },
+  {
+    lat: 58.5854678,
+    lng: 49.4319925
+  }
+]
+
+export const mapStyles = {
+  width: '1170px',
+  height: '462px'
+};

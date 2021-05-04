@@ -1,3 +1,13 @@
+html{
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 img {
   max-width: 100%;
   height: auto;

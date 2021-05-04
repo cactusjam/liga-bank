@@ -20,6 +20,21 @@
     &--user {
         margin-left: auto;
     }
+
+    &--footer {
+      flex-direction: column;
+      padding: 0;
+      text-align: left;
+
+      a {
+        padding: 0;
+      }
+
+      li {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
 }
 
 .navigation__item {
